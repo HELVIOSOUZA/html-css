@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses</title>
+
+    <style>
+       body{
+           background-color: rgb(208, 245, 232);
+       }
+       div > p {
+           display: none;
+       }
+       div:hover > p {
+           display: block;
+           color: white;
+           background-color: red;
+           width: 200px;
+       }
+        div {  display: inline-block; 
+            background-color: rgb(101, 153, 153);
+            border: 1px solid black;
+        text-align: center;
+        height: 200px;
+        width: 200px;
+        }
+        div:hover {
+            background-color: yellow;
+            
+            
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+   
+   /* <div>01</div>
+    <div>02</div>
+    <div>03</div>
+    */
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>passe o mouse aqui
+        <p>Bicha curiosa! Hein?</p>
+    </div>
+    <p class="unica">Fim do exemplo</p>
+
+</body>
+</html>

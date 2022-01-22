@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste imagem atlético</title>
+</head>
+<style>
+     header{
+         background-color: black;
+     } 
+     header h1{
+         color: white;
+         text-align: center;
+     } 
+     header p{
+         background-color: yellow;
+         color: black;
+         text-align: center;
+        
+     }
+    main img {
+        width: 100%;
+       
+    }
+</style>
+<header>
+    <h1>Clube Atlético Mineiro</h1>
+    <p>O melhor time do Brasil</p>
+</header>
+<body>
+    <main>
+        <h1>Clube Atlético Mineiro</h1>
+        <p>Aqui está meu teste de imagem.</p>
+        <picture>
+            <source media="(max-width: 710px)" srcset="imagens/cam-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/cam-m.png" type="image/png">
+            <img src="imagens/cam-g.png" alt="galo">
+        </picture>
+    </main>
+</body>
+</html>

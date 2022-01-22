@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .marque {
+            width: 600px;
+            height: 32px;
+            overflow: hidden;
+            white-space: nowrap;
+            border: 1px solid #ccc;
+            padding: 2px;
+            font-size: 2em;
+
+        }
+        .marque span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marque 30s linear infinite;
+        }
+        @keyframes marque {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(-100%, 0);
+            }
+        }
+        ul {
+            list-style-type: '\2714\00A0\00A0';
+            list-style-position: inside;
+            columns: 1;
+        }
+
+        
+    </style>
+    <title>Desafio 05</title>
+</head>
+<body>
+    <div class="marque"> <span><em>Professor <strong>Hélvio Souza</strong></em> usando a tag marquee para ensinar o uso de diversas outras tags. O uso correto da tag marquee eu aprendi na internet e os demais com o Professor Gustavo Guanabara do Cursoemvideo!</span></div>
+    <h1>Tags em HTML</h1>
+    <p>Em HTML5, usamos diversas tags para representar parágrafos, titulos, abreviações, etc... Abaixo segue alguns exemplos.</p>
+    
+    <ul>
+        <li><abbr title="Use a tag P">parágrafo</abbr></li>
+        <li><abbr title="Use as tags h1, h2, h3, h4, h5, e h6.">Títulos</abbr></li>
+        <li><abbr title="Use a tag img">imagens</abbr></li>
+        <li><abbr title="Use a tag abbr">Abreviações</abbr></li>
+        <li><abbr title="Use a tag code.">Código fonte</abbr></li>
+        <li><abbr title="Use as tags ol e li">Listas numeradas</abbr></li>
+        <li><abbr title="Use as tags ul e li">Listas com demarcadores</abbr></li>
+       
+     </ul>
+</body>
+</html>
