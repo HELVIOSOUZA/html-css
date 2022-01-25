@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main { 
+            background-color: rgba(243, 198, 159, 0.282);
+            width: 500px;
+            height: 200px;
+            text-align: center;
+        }
+        div {
+            text-align: center;
+        }
+        
+        div > p {
+            display: none;
+            text-align: center;
+            
+            
+
+        }
+        div:hover > p {
+            display: block;
+            font-size: 3em;
+            width: 450px;
+            color: white;
+            background-color: rgba(199, 13, 13, 0.611);
+            padding-left: 50px;
+            border-radius: 5px;
+            
+        }
+        main > h1 {
+            color: rgb(33, 14, 157);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-shadow: 3px 2px 0px rgb(0, 0, 0, 0.315);
+            
+        }
+       
+    </style>
+</head>
+<body>
+    
+        <main>
+            <h1>Notícias de Nepomuceno</h1>
+            
+            <div>
+                Clique Aqui &#9654
+                <p>Bicha Curiosa Hein? 😄 😄 😄</p>
+            
+                </div>
+        </main>
+</body>
+</html>
