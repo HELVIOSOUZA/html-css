@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letra H</title>
+    <style>
+        @charset "UTF-8";
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    height: 90vh;
+}
+div {
+    background: #b1060f;
+    height: 250px;
+    width: 60px;
+    position: relative;
+}
+div::before {
+    background: #b1060f;
+    height: 250px;
+    width: 60px;
+    position: absolute;
+    content: '';
+    left: 90px;
+}
+div::after {
+    background: #1a1a1a;
+    height: 20px;
+    width: 175px;
+    position: absolute;
+    content: '';
+    left: -15px;
+    bottom: -10px;
+    border-radius: 50%;
+
+}
+span {
+    position: absolute;
+    height: 50px;
+    width: 31px;
+    background-color: #e50913;
+    left: 60px;
+    transform: skew(0deg);
+    
+    bottom: 110px;
+    
+}
+    </style>
+</head>
+<body>
+    <div>
+        <span></span>
+    </div>
+</body>
+</html>
