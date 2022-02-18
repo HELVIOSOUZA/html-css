@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(140, 137, 137);
+            margin: 0px;
+        }
+        header {
+            background-color: lightgray;
+            
+            padding: 10px;
+            margin: 10px;
+            
+        }
+        header > h1 {
+            text-align: center;
+            font-size: 40px;
+            color: white; text-shadow: black 0.1em 0.1em 0.2em
+        }
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 5px;
+            box-shadow: inset -16px 0px 0px 6px rgb(85, 84, 84);
+            /*Único jeito que consegui foi adicionando manualmente o box-shadow no dev tools, digitar valores e cor aleatórios. Após isso aparece um "quadradinho" na frente do box-shadow, e assim então vc tem acesso aquela caixa que aparece no vídeo.
+                 Obs: para abrir o dev tools, botão direito e inspencionar. Dev tools é testar com está ficando as configurações em CSS.
+                 - O inset coloca a sombra pra dentro.
+            */
+            
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            margin-right: 40px;
+            font-weight: bold;
+
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px;
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        footer {
+            background-color: rgb(48, 47, 47);
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p></p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, libero obcaecati molestias delectus inventore voluptas ea accusantium? Ipsam tempora amet consequuntur. Nobis minus cumque impedit, aliquid maxime commodi vero placeat?</p>
+                <aside>
+                    <p>Artigo escrito por João Guilherme</p>
+                </aside>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Helvio Souza</p>
+    </footer>
+</body>
+</html>
