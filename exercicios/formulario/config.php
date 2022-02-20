@@ -1,7 +1,7 @@
 <?php
     $sbHost = 'Localhost';
     $dbUsername = 'root';
-    $dbName = 'formulaio-escola';
+    $dbName = 'formulario-escola';
     $dbPassword = '';
     
      $conexao = new mysqli($sbHost,$dbUsername,$dbPassword,$dbName );
