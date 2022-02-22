@@ -1,3 +1,13 @@
+<?php
+
+if (isset($_POST['submit']))
+{
+   print_r($_POST['nome']);
+   print_r($_POST['email']);
+   print_r($_POST['telefone']);
+}
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -91,7 +101,7 @@
     
     <div class="box">
              
-    <form action="">
+    <form action="formulario.php" method="POST">
         <fieldset > 
             <legend><strong>Formulário de Alunos</strong> </legend>
                
